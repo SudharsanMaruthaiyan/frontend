@@ -6,9 +6,9 @@ import About from './pages/About'
 import Doctors from './pages/Doctors'
 import Login from './pages/Login'
 import Contact from './pages/Contact'
-import MyProfile from './pages/Myprofile'
 import MyAppointment from './pages/MyAppointment'
 import Appointment from './pages/Appointment'
+import MyProfile from './pages/MyProfile'
 
 const App = () => {
   return (
