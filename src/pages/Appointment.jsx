@@ -27,10 +27,10 @@ const Appointment = () => {
         // getting current date 
         let today = new Date()
 
-        for(let i=0; i<7; i++){
+        for(let i= 0 ; i<7; i++){
             //getting date with index
             let currentDate = new Date(today)
-            currentDate.setDate(today.getDate() +i)
+            currentDate.setDate(today.getDate()+i)
 
             //setting and time of the date with index 
             let endTime = new Date()
@@ -64,6 +64,7 @@ const Appointment = () => {
             setDocSlots(prev => ([...prev, timeSlots]))
 
         }
+        
     }
 
     useEffect(()=>{
@@ -76,7 +77,6 @@ const Appointment = () => {
 
     useEffect(()=>{
         console.log(docSlots);
-        
     },[docSlots])
 
   return docInfo && (
