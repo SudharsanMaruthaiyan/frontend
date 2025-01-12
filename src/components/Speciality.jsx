@@ -13,7 +13,7 @@ const Speciality = () => {
             {
                 specialityData.map((items,index)=>{
                     return(
-                        <Link className=' flex flex-col items-center cursor-pointer text-xs flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500' to={`/doctors/${items.speciality}`} key={index}>
+                        <Link className=' flex flex-col items-center cursor-pointer text-xs flex-shrink-0 hover:translate-y-[-10px] transition-all duration-500' to={(`/doctors/${items.speciality}`)} key={index}>
                             <img className=' w-16 sm:w-24 mb-2' src={items.image} alt="" />
                             <p>{items.speciality}</p>
                         </Link>

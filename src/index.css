@@ -15,3 +15,7 @@
         @apply text-white bg-primary
     }
 }
+
+/* *{
+    scroll-behavior: smooth;
+} */

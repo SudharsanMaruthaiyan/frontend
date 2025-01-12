@@ -24,9 +24,9 @@ export const RelatedDoctors = ({speciality , docId}) => {
                     <div onClick={()=> {navigate(`/appointment/${item._id}`); scrollTo(0,0)}} className=' border border-blue-200 overflow-hidden rounded-xl cursor-pointer my-5 hover:translate-y-[-10px] duration-500 transition-all'>
                         <img className=' bg-blue-50' src={item.image} alt="" />
                         <div className=' p-4'>
-                            <div className='flex items-center gap-2 text-center text-gray-50'>
-                                <p className=' w-2 h-2 rounded-full bg-green-500'></p>
-                                <p>Available</p>
+                            <div className={`flex items-center gap-2 text-center ${item.available ? 'text-green-500' : 'text-gray-500'}`}>
+                                <p className={`w-2 h-2 rounded-full ${item.available ? 'bg-green-500' : 'bg-gray-500'}`}></p>
+                                <p className=''>{item.available ? "Available" : "Not Available"}</p>
                             </div>
                             <p className=' text-gray-900 text-lg font-medium'>{item.name}</p>
                             <p className=' text-gray-600 text-sm'>{item.speciality}</p>
