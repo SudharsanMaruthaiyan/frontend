@@ -28,7 +28,7 @@ const Login = () => {
             setToken(data.token)
          }
          else{
-            toast.error(data.message)
+            toast.error("Already Register")
          }
       }
       else{
