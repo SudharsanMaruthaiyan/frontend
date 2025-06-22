@@ -39,7 +39,7 @@ const Login = () => {
             setToken(data.token)
          }
          else{
-            toast.error(data.message)
+            toast.error("Invalid Email or Password")
          }
 
       }

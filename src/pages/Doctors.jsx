@@ -8,6 +8,7 @@ const Doctors = () => {
   const [filterDoc, setFilterDoc] = useState([])
   const [showFiter, setShowFilter] = useState(false)
   const navigate = useNavigate();
+  
   const applyFilter = ()=>{
     if(speciality){
         setFilterDoc(doctors.filter(doc => doc.speciality === speciality))
